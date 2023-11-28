@@ -11,7 +11,7 @@ export const AppDataSource = new DataSource({
   database: "coba",
   synchronize: true,
   logging: false,
-  entities: [User],
+  entities: ["src/entities/*.ts"],
   migrations: ["src/migrations/*.ts"],
   subscribers: [],
 });
